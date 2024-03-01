@@ -18,6 +18,9 @@ include device/google/pantah/cheetah/device-lineage.mk
 # PixelParts
 include packages/apps/PixelParts/device.mk
 
+# Call the BCR setup
+$(call inherit-product-if-exists, vendor/bcr/bcr.mk)
+
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 7 Pro

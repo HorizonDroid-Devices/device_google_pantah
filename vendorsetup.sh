@@ -19,6 +19,10 @@ git clone https://github.com/HorizonDroid-Devices/proprietary_vendor_google_chee
 echo 'Cloning pixelparts'
 git clone https://github.com/HorizonDroid-Devices/packages_apps_PixelParts.git -b udc packages/apps/PixelParts
 
+# BCR
+echo 'Cloning bcr'
+git clone --depth=1 https://github.com/kenway214/vendor_bcr.git -b aosp-14 vendor/bcr
+
 rm -rf hardware/google/pixel && git clone https://github.com/LineageOS/android_hardware_google_pixel -b lineage-21.0 hardware/google/pixel
 
 rm -rf hardware/google/graphics/common && git clone https://github.com/LineageOS/android_hardware_google_graphics_common -b lineage-21.0 hardware/google/graphics/common
