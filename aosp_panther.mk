@@ -9,6 +9,9 @@ TARGET_DISABLE_EPPE := true
 DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
+# PixelParts
+include packages/apps/PixelParts/device.mk
+
 # Inherit device configuration
 $(call inherit-product, device/google/pantah/aosp-horizon_panther.mk)
 $(call inherit-product, device/google/gs201/lineage_common.mk)
